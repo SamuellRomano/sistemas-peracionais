@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="ovomaltine">
+    <h1 align="center">Abreviações Emmet</h1>
+    <nav class="ovo">
+       
+        <p> Emmet é um plugin (para diversos editores/IDEs) que facilita bastante a escrita do HTML, provendo abreviações poderosas, snippets dinâmicos e diversos atalhos para escrever HTML</p>
+    
+    <p align="center"><table border="1" width="70%" heigth="500">
+        <tr>
+            <th colspan="1" >Syntax</th>
+            <th colspan="1" >Abbreviation</th>
+            <th colspan="1" >Output</th>
+            <th colspan="1" >Descripition</th>
+        </tr>
+
+        <tr>
+            <td>Child: ></td>
+            <td>nav>ul>li </td>
+            <td> 
+                <p>   <.nav>  </p>
+                    <p>       <.ul></p>
+                        <p>       <.li><./li></p>
+                        <p>        <./ul> </p>
+             <p>   <./nav>  </p>
+        
+            
+            </td>
+            <td>Esse operador adiciona o elemento, a direita como uma "child" do elemento na esquerda</td>
+        <tr/>
+
+        <tr>
+            <td>Sibling: +</td>
+            <td>divi+p+b</td>
+            <td>
+                <p> <.div><./div></p>
+                <p>   <.p><./p></p>
+                 <p>  <.bold><./bold> </p>
+                        </td>
+            <td>Esse operador adiciona o elemento, a direita como uma "sibling" do elemento na esquerda</td>
+        <tr/>
+
+        <tr>
+            <td>Climb-Up: ^</td>
+            <td>div+div>p>span^b</td>
+            <td>
+                <p>  <.div><./div></p>
+                    <p>  <.div></p>
+                        <p>  <.p></p>
+                            <p>  <.b><./b></p>
+                                <p>  <./div> </p>
+            
+            </td>
+            <td>Esse operador puxa o elemento da direita para seu "parent" direto</td>
+        <tr/>
+
+        <tr>
+            <td>Grouping: ()</td>
+            <td>div>(header>ul>li)</td>
+            <td>
+                <p> <.div></p>
+                    <p>    <.header></p>
+                        <p>        <.ul></p>
+                            <p>           <.li><./li></p>
+                                <p>               <./ul></p>
+                                    <p>               <./header></p>
+                                        <p>              <./div>  </p>
+            </td>
+            <td>Esse grupo de operadores são elementos de "children" sobre o "parent" </td>
+        <tr/>
+
+        <tr>
+            <td>Multiplication: *</td>
+            <td>ul>li*5</td>
+            <td>
+                <p><./ul>
+                    <p> <.li><./li></p>
+                        <p>  <.li><./li></p>
+                            <p>  <.li><./li></p>
+                                <p>   <.li><./li></p>
+                                    <p>    <.li><./li></p>
+                                        <p>  <./ul>  </p>
+            </td>
+            <td>O operador da esquerda é multplicado pelo número da direita</td>
+        <tr/>
+
+        <tr>
+            <td>Text: {}</td>
+            <td>a{click me}</td>
+            <td>
+                <p>    <.a href=""></p>
+                    <p>   click me</p>
+                        <p>  <./a> <./p></p>
+            </td>
+            <td>Esse operado retorna para o valor de dentro dele como o valor do elemento a esquerda</td>
+        <tr/>
+
+        <tr>
+            <td>ID: #</td>
+            <td>#id</td>
+            <td>
+                <p><.div id="id"><./div> </p>
+            </td>
+            <td>Esse operador retorna ao "div" com o atributo id</td>
+        <tr/>
+
+        <tr>
+            <td>Class: .</td>
+            <td>.us</td>
+            <td>
+                <p>   <.div class="us"><./div> </p>
+            </td>
+            <td>Esse operador retorna como "div" com o atributo classe "us"</td>
+        <tr/>
+
+    </table></p>
+
+    </nav>
+    
+</body>
+</html>
+
